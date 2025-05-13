@@ -54,6 +54,8 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 vim.keymap.set('n', 'c', '"_c', { noremap = true })
 vim.keymap.set('x', 'c', '"_c', { noremap = true })
 
+vim.keymap.set('n', '<CR>', 'm`o<Esc>``')
+vim.keymap.set('n', '<S-CR>', 'm`O<Esc>``')
 ------------------
 --- barbar keymaps
 ------------------
