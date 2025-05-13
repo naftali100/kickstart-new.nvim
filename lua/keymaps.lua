@@ -51,6 +51,9 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+vim.keymap.set('n', 'c', '"_c', { noremap = true })
+vim.keymap.set('x', 'c', '"_c', { noremap = true })
+
 ------------------
 --- barbar keymaps
 ------------------
