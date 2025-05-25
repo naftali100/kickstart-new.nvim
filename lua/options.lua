@@ -74,8 +74,8 @@ vim.o.confirm = true
 
 vim.opt.termguicolors = true
 
-vim.o.foldmethod = 'syntax'
-vim.o.foldexpr = 'nvim_treesitter#foldexpr()'
+-- vim.o.foldmethod = 'syntax'
+-- vim.o.foldexpr = 'nvim_treesitter#foldexpr()'
 
 -- vim: ts=2 sts=2 sw=2 et
 
