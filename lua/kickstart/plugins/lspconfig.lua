@@ -221,7 +221,7 @@ return {
         -- ts_ls = {},
         --
         basedpyright = {},
-        ruff = {},
+        -- ruff = {},
 
         lua_ls = {
           -- cmd = { ... },
