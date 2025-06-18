@@ -1,4 +1,4 @@
 return {
-  'tpope/vim-sensible',
-  opts = {}
+  -- 'tpope/vim-sensible',
+  -- opts = {}
 }
