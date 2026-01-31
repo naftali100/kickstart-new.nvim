@@ -53,8 +53,10 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
-vim.keymap.set('n', 'c', '"_c', { noremap = true })
-vim.keymap.set('x', 'c', '"_c', { noremap = true })
+-- Normal and visual mode: delete without yanking
+vim.keymap.set({'n', 'v'}, 'd', '"_d', { noremap = true, silent = true })
+-- Normal and visual mode: change without yanking
+vim.keymap.set({'n', 'v'}, 'c', '"_c', { noremap = true, silent = true })
 
 vim.keymap.set('n', '<CR>', 'm`o<Esc>``')
 vim.keymap.set('n', '<S-CR>', 'm`O<Esc>``')
